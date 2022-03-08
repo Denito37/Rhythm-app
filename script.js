@@ -1,16 +1,20 @@
-const clueHoldTime = 100;
+const clueHoldTime = 1000;
+const cluePauseTime = 333;
+const nextClueWaitTime = 1000;
 
 var pattern = [2,2,4,3,2,1,2,4];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
+var guessCounter = 0;
 
 function startGame(){
   progress = 0;
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  playClueSequence();
 }
 
 function stopGame(){
@@ -62,6 +66,34 @@ function playSingleClue(btn){
     lightButton(btn);
     playTone(btn, clueHoldTime);
     setTimeout(clearButton, clueHoldTime,btn);
+  }
+}
+
+function playClueSequence(){
+  var guessCounter = 0;
+  context.resume()
+  let delay = nextClueWaitTime;
+  for(let i=0; i<=progress;i++){
+    console.log("play single clue: "+pattern[i]+" in "+ delay + "ms")
+    setTimeout(playSingleClue, delay, pattern[i])
+    delay += clueHoldTime
+    delay += cluePauseTime;
+  }
+}
+
+function loseGame(){
+  stopGame();
+  alert("Game Over. You lost.");
+}
+function winGame(){
+  stopGame();
+  alert("Game Over. You Won!")
+}
+
+function guess(btn){
+  console.log("user guessed: " + btn);
+  if(!gamePlaying){
+    return;
   }
 }
 // Page Initialization
