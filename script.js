@@ -2,15 +2,17 @@ const clueHoldTime = 1000;
 const cluePauseTime = 333;
 const nextClueWaitTime = 1000;
 
-var pattern = [2,2,4,3,2,1,2,4];
+var pattern = [2,2,4,3,2,1,5,2,4,6];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
+var mistakeCounter = 0;
 
 function startGame(){
   progress = 0;
+  mistakeCounter = 0;
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -28,7 +30,9 @@ const freqMap = {
   1: 261.6,
   2: 329.6,
   3: 392,
-  4: 466.2
+  4: 466.2,
+  5: 220.5,
+  6: 401.6
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -113,8 +117,9 @@ function guess(btn){
   }else{
     //Guess was incorrect
     //GAME OVER: LOSE!
-    loseGame();
+    mistakeCounter++
   }
+  if(mistakeCounter = 3){loseGame();}
 }
 
 // Page Initialization
