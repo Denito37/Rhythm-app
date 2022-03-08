@@ -70,6 +70,7 @@ function playSingleClue(btn){
 }
 
 function playClueSequence(){
+  context.resume()
   var guessCounter = 0;
   let delay = nextClueWaitTime;
   for(let i=0; i<=progress;i++){
@@ -114,7 +115,7 @@ function guess(btn){
     //GAME OVER: LOSE!
     loseGame();
   }
-  }
+}
 
 // Page Initialization
 // Init Sound Synthesizer
