@@ -117,9 +117,10 @@ function guess(btn){
   }else{
     //Guess was incorrect
     //GAME OVER: LOSE!
-    mistakeCounter++
+    mistakeCounter++;
   }
-  if(mistakeCounter = 3){loseGame();}
+  if(mistakeCounter = 3){
+    loseGame();}
 }
 
 // Page Initialization
