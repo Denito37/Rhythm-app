@@ -71,7 +71,6 @@ function playSingleClue(btn){
 
 function playClueSequence(){
   var guessCounter = 0;
-  context.resume()
   let delay = nextClueWaitTime;
   for(let i=0; i<=progress;i++){
     console.log("play single clue: "+pattern[i]+" in "+ delay + "ms")
@@ -96,19 +95,26 @@ function guess(btn){
     return;
   }
   if(pattern[guessCounter] == btn){
+    //Guess was correct!
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
+        //GAME OVER: WIN!
         winGame();
       }else{
+        //Pattern correct. Add next segment
         progress++;
         playClueSequence();
-      }}else{
-        guessCounter++;
       }
     }else{
-        loseGame();
-      }
+      //so far so good... check the next guess
+      guessCounter++;
     }
+  }else{
+    //Guess was incorrect
+    //GAME OVER: LOSE!
+    loseGame();
+  }
+  }
 
 // Page Initialization
 // Init Sound Synthesizer
