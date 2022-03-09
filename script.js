@@ -16,7 +16,6 @@ function randomPattern(){
     pattern.push(random);
   }
 }
-
 function startGame(){
   randomPattern();
   progress = 0;
