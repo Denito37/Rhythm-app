@@ -105,6 +105,9 @@ function guess(btn){
       if(progress == pattern.length - 1){
         //GAME OVER: WIN!
         winGame();
+      }
+      if(mistakeCounter == 3){
+    loseGame();
       }else{
         //Pattern correct. Add next segment
         progress++;
@@ -119,8 +122,7 @@ function guess(btn){
     //GAME OVER: LOSE!
     mistakeCounter++;
   }
-  if(mistakeCounter = 3){
-    loseGame();}
+  
 }
 
 // Page Initialization
