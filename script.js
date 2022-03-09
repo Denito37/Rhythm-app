@@ -2,7 +2,7 @@ const clueHoldTime = 1000;
 const cluePauseTime = 333;
 const nextClueWaitTime = 1000;
 
-var pattern = [2,2,4,3,2,1,5,2,4,6];
+var pattern = [2,2,4,3,1,5,2,4,6];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -12,19 +12,18 @@ var mistakeCounter = 0;
 
 function startGame(){
   progress = 0;
+  guessCounter = 0;
   mistakeCounter = 0;
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   playClueSequence();
 }
-
 function stopGame(){
   gamePlaying = false;
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
 }
-
 // Sound Synthesis Functions, numbers represent sound pitch
 const freqMap = {
   1: 261.6,
@@ -56,15 +55,12 @@ function stopTone(){
   g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
   tonePlaying = false
 }
-
 function lightButton(btn){
   document.getElementById("button"+btn).classList.add("lit");
 }
-
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit");
 }
-
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
@@ -72,7 +68,6 @@ function playSingleClue(btn){
     setTimeout(clearButton, clueHoldTime,btn);
   }
 }
-
 function playClueSequence(){
   context.resume()
   var guessCounter = 0;
@@ -84,7 +79,6 @@ function playClueSequence(){
     delay += cluePauseTime;
   }
 }
-
 function loseGame(){
   stopGame();
   alert("Game Over. You lost.");
@@ -105,9 +99,6 @@ function guess(btn){
       if(progress == pattern.length - 1){
         //GAME OVER: WIN!
         winGame();
-      }
-      if(mistakeCounter == 3){
-    loseGame();
       }else{
         //Pattern correct. Add next segment
         progress++;
@@ -120,9 +111,8 @@ function guess(btn){
   }else{
     //Guess was incorrect
     //GAME OVER: LOSE!
-    mistakeCounter++;
+    loseGame();
   }
-  
 }
 
 // Page Initialization
