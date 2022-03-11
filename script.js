@@ -32,12 +32,12 @@ function stopGame(){
 }
 // Sound Synthesis Functions, numbers represent sound pitch
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2,
-  5: 220.5,
-  6: 401.6
+  1: 211.6,
+  2: 269.6,
+  3: 292,
+  4: 346.2,
+  5: 390.5,
+  6: 431.6
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
