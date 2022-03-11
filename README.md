@@ -47,16 +47,24 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+[I used W3Schools and my notes in my notion account which I made based on information on W3Schools.]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+[What is the usual process of bringing up a new feature you want to an app to the team
+ and if the feature is complex and needs multiple people to develop in a reasonable time
+ how would the proposal of the feature be handled as opposed to a proposal for a simple
+ feature you can complete yourself?
+  ]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+[I would add pre-set melodies based on know music such as Super Mario Bros 
+ with the user being able to select it with a button that changes the pattern and frequency map values to make that melody.
+ I would also create key bindings to represent each button in the html file so that the 
+ controls of the game would feel better and the user can play the game faster, the keys i would 
+ bind the six buttons with are "Q,W,E,A,S,D" respectively.]
 
 
 
