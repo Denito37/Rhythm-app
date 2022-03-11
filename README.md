@@ -57,7 +57,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
  and if the feature is complex and needs multiple people to develop in a reasonable time
  how would the proposal of the feature be handled as opposed to a proposal for a simple
  feature you can complete yourself?
-  ]
+  How often are completely new projects developed as opposed to managing an existing project?]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 [I would add pre-set melodies based on know music such as Super Mario Bros 
