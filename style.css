@@ -24,10 +24,10 @@ button{
 }
 .rhythm{
   display:grid;
-  max-width: 700px;
+  max-width: 650px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 10px;
-  grid-column-gap:10px;
+  grid-row-gap: 5px;
+  grid-column-gap:5px;
 }
 .hidden{
   display: none;
