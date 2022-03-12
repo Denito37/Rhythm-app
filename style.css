@@ -16,7 +16,6 @@ button{
   border-radius: 20px;
   
 }
-
 #gameButtonArea > button{
   width: 200px;
   height: 200px;
@@ -24,7 +23,8 @@ button{
 }
 .rhythm{
   display:grid;
-  align-content:center;
+  justify-content:center;
+  align-items: center;
   max-width: 650px;
   grid-template-columns: repeat(3,1fr);
   gap: 5px;
