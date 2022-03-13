@@ -1,5 +1,5 @@
 body {
-  font-family : helvetica, arial, sans-serif;
+  font-family : verdana, arial, sans-serif;
   text-align: center;
   margin: 2em;
   background-color: #7080AC;
@@ -33,6 +33,7 @@ button{
 
 #button1{
   background: lightgreen;
+  place-self:center center;
 }
 #button1:active, #button1.lit{
   background: green;
@@ -41,6 +42,9 @@ button{
 
 #button2{
   background: lightblue;
+    place-self:center center;
+
+
 }
 #button2:active, #button2.lit{
   background:blue;
