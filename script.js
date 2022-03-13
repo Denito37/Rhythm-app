@@ -67,6 +67,7 @@ function lightButton(btn){
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit");
 }
+                          
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
