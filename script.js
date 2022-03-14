@@ -10,6 +10,7 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 var guessMatch = 0;
+var out = [];
 
 function randomPattern(){
   for(let i = 0; i <8; i++){
@@ -101,6 +102,8 @@ function guess(btn){
   console.log("counter: " + guessCounter);
   console.log("progress: " + progress);
   console.log("match: " + guessMatch);
+  console.log("array: " + out);
+  console.log("array: " + pattern);
   
   if(!gamePlaying){
     return;
@@ -113,12 +116,13 @@ function guess(btn){
       else{
         //Pattern correct. Add next segment
         progress++;
-        guessCounter++;//problem: only last button counts as right guess
+        out.push(btn);
+        //guessCounter++;//problem: only last button counts as right guess
         playClueSequence();
       }
     }else{
       //so far so good... check the next guess
-      //guessCounter++;//problem only last two button counts as right guess
+      guessCounter++;//problem only last two button counts as right guess
       guessMatch++;
       //guessCounter = 0;//problem only first button counts as right
     }
