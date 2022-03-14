@@ -97,6 +97,8 @@ function winGame(){
 
 function guess(btn){
   console.log("user guessed: " + btn);
+  console.log("counter: " + guessCounter);
+  console.log("progress: " + progress);
   
   if(!gamePlaying){
     return;
@@ -106,25 +108,21 @@ function guess(btn){
     //Guess was correct!
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
-        //GAME OVER: WIN!
         winGame();
       }else{
         //Pattern correct. Add next segment
         progress++;
+        guessCounter++;
         playClueSequence();
       }
     }else{
       //so far so good... check the next guess
-      guessCounter++;
+      //guessCounter++;
     }
   }else{
-    //Guess was incorrect
-    //GAME OVER: LOSE!
-    loseGame();
-  }
+        loseGame();
+      }
 }  
-
-
 // Page Initialization
 // Init Sound Synthesizer
 var AudioContext = window.AudioContext || window.webkitAudioContext 
