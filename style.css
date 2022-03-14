@@ -19,9 +19,11 @@ button{
   height: 200px;
   margin: 1em;
 }
+@media (min-width:1025px){
 .rhythm{
   display:grid;
   grid-template-columns:repeat(3,1fr);
+}
 }
 .hidden{
   display: none;
