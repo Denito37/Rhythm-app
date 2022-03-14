@@ -109,13 +109,13 @@ function guess(btn){
   if(pattern[guessCounter] == btn){
     //Guess was correct!
     if(guessMatch == progress){
-      if(progress == pattern.length - 1){
-        winGame();
-      }else{
+      if(progress == pattern.length - 1){winGame();}
+      else{
         //Pattern correct. Add next segment
         progress++;
         //guessCounter++;//problem: only last button counts as right guess
         playClueSequence();
+        if(guessCounter>=1&&pattern<=2){guessCounter = 0;}// problem:only first 2 count
       }
     }else{
       //so far so good... check the next guess
@@ -123,9 +123,7 @@ function guess(btn){
       guessMatch++;
       //guessCounter = 0;//problem only first button counts as right
     }
-  }else{
-        loseGame();
-      }
+  }else{loseGame();}
 }  
 // Page Initialization
 // Init Sound Synthesizer
