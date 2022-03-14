@@ -9,7 +9,7 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
-//var guessMatch = [];
+var guessMatch = 0;
 
 function randomPattern(){
   for(let i = 0; i <8; i++){
@@ -100,7 +100,7 @@ function guess(btn){
   console.log("user guessed: " + btn);
   console.log("counter: " + guessCounter);
   console.log("progress: " + progress);
-  //guessMatch.push(btn);
+  console.log("match: " + guessMatch);
   
   if(!gamePlaying){
     return;
@@ -108,7 +108,7 @@ function guess(btn){
   
   if(pattern[guessCounter] == btn){
     //Guess was correct!
-    if(guessCounter == progress){
+    if(guessMatch == progress){
       if(progress == pattern.length - 1){
         winGame();
       }else{
@@ -120,6 +120,8 @@ function guess(btn){
     }else{
       //so far so good... check the next guess
       guessCounter++;//problem only last two button counts as right guess
+      guessMatch++;
+      //guessCounter = 0;//problem only first button counts as right
     }
   }else{
         loseGame();
