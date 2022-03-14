@@ -107,8 +107,8 @@ function guess(btn){
   if(pattern[guessCounter] == btn){
     if(guessCounter == progress){
         progress++;
-      if(progress == pattern.length - 1){winGame();return;}
         playClueSequence();
+      if(progress == pattern.length - 1){winGame();return;}
     }else{guessCounter++;}//problem only last two button counts as right guess
   }else{loseGame();return;}
 }  
