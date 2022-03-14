@@ -112,12 +112,12 @@ function guess(btn){
       }else{
         //Pattern correct. Add next segment
         progress++;
-        guessCounter++;
+        //guessCounter++;//problem: only last button counts as right guess
         playClueSequence();
       }
     }else{
       //so far so good... check the next guess
-      //guessCounter++;
+      guessCounter++;//problem only last two button counts as right guess
     }
   }else{
         loseGame();
