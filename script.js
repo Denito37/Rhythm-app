@@ -113,13 +113,12 @@ function guess(btn){
       else{
         //Pattern correct. Add next segment
         progress++;
-        //guessCounter++;//problem: only last button counts as right guess
+        guessCounter++;//problem: only last button counts as right guess
         playClueSequence();
-        if(guessCounter>=1&&pattern<=2){guessCounter = 0;}// problem:only first 2 count
       }
     }else{
       //so far so good... check the next guess
-      guessCounter++;//problem only last two button counts as right guess
+      //guessCounter++;//problem only last two button counts as right guess
       guessMatch++;
       //guessCounter = 0;//problem only first button counts as right
     }
