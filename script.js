@@ -9,6 +9,7 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
+//var guessMatch = [];
 
 function randomPattern(){
   for(let i = 0; i <8; i++){
@@ -99,6 +100,7 @@ function guess(btn){
   console.log("user guessed: " + btn);
   console.log("counter: " + guessCounter);
   console.log("progress: " + progress);
+  //guessMatch.push(btn);
   
   if(!gamePlaying){
     return;
