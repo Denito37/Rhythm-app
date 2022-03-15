@@ -15,30 +15,42 @@ document.addEventListener("keydown",keyControls => {
   if(keyControls.key === "q"){
     startTone(1);
     guess(1);
+    lightButton(1);
   }
   if(keyControls.key === "w"){
     startTone(2);
     guess(2);
+    lightButton(2);
   }
   if(keyControls.key === "e"){
     startTone(3);
     guess(3);
+    lightButton(3);
   }
   if(keyControls.key === "a"){
     startTone(4);
     guess(4);
+    lightButton(4);
   }
   if(keyControls.key === "s"){
     startTone(5);
     guess(5);
+    lightButton(5);
   }
   if(keyControls.key === "d"){
     startTone(6);
     guess(6);
+    lightButton(6);
   }
 });
 document.addEventListener("keyup", keys =>{
   stopTone();
+  clearButton(1);
+  clearButton(2);
+  clearButton(3);
+  clearButton(4);
+  clearButton(5);
+  clearButton(6);
 });
 
 //creates new patterns
