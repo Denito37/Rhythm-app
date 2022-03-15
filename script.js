@@ -10,6 +10,33 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 
+document.addEventListener('keydown',startTone );
+document.addEventListener('keyup',stopTone );
+
+switch (startTone.key) {
+  case "q":
+    "startTone(1)"
+    "guess(1)"
+  break
+  case "w":
+    startTone(2)
+  break
+  case "e":
+    startTone(3)
+  break
+  case "a":
+    startTone(4)
+  break
+  case "s":
+    startTone(5)
+  break
+  case "d":
+    startTone(6)
+  break
+  default: 
+}
+
+
 function randomPattern(){
   for(let i = 0; i <8; i++){
   var random = Math.floor(Math.random() * 6) + 1;//returns random number from 1-6
