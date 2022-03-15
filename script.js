@@ -10,14 +10,30 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 
-document.addEventListener("keydown",keyControls, false);
-
-function keyControls(key){
-  if(key.keycode == "65"){
-    startTone(4);
-    alert("heheho");
+//key controls
+document.addEventListener("keydown",keyControls => {
+  if(keyControls.key === "q"){
+    startTone(1);
   }
-}
+  if(keyControls.key === "w"){
+    startTone(2);
+  }
+  if(keyControls.key === "e"){
+    startTone(3);
+  }
+  if(keyControls.key === "a"){
+    startTone(4);
+  }
+  if(keyControls.key === "s"){
+    startTone(5);
+  }
+  if(keyControls.key === "d"){
+    startTone(6);
+  }
+});
+document.addEventListener("keyup", keys =>{
+  stopTone();
+});
 
 function randomPattern(){
   for(let i = 0; i <8; i++){

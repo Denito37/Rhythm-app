@@ -76,10 +76,7 @@ place-self:, after playing around with this function I was able to set the butto
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 [I would add pre-set  remixed melodies based on know music such as Super Mario Bros 
  with the user being able to select it with a button that changes the pattern and frequency map values to make that melody.
- I would also create key bindings to represent each button in the html file so that the 
- controls of the game would feel better and the user can play the game faster, the keys i would 
- bind the six buttons with are "Q,W,E,A,S,D" respectively. I would also like to make
- a version of this website to work with mobile phones by using  @media to set the buttons 
+ I would also like to make a version of this website to work with mobile phones by using  @media to set the buttons 
  to be smaller to fit all six buttons in 3 rows and 2 columns. With an optimized mobile phone
  app of this website and pre-set songs it could be a fun time-burner app for people
  to play while waiting for anything. Since I also enjoy a good challenge in games
