@@ -3,7 +3,7 @@
 
 **Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
-Submitted by: **NAME**
+Submitted by: **Dennes Lopez**
 
 Time spent: **#** hours spent in total
 
@@ -47,10 +47,19 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[I used W3Schools and my notes in my notion account which I made based on information on W3Schools.]
+[I used https://freshman.tech/css-grid-calculator/ , W3Schools and my notes 
+in my notion account which I made based on information on W3Schools.]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+[A Challenge I encountered was making css grid do what i wanted without drawbacks.
+My goal was to make the six buttons stay on a 3*2 array, using the regular css
+grid column function made the 3*2 array but the buttons were too far apart 
+as each column was set to take 1/3 of the width of the website. At first
+I tried to fix this with setting the maximum width of the grid container to fit
+just the 3 buttons and the 2 gaps which made the buttons closer together
+but when the window was expanded they would shift to the left of the screen 
+leaving a massive blank space to the right.I couldn't think of a way to move
+the container to start in the middle of the screen so I did some re]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [What is the usual process of bringing up a new feature you want to an app to the team
