@@ -14,27 +14,34 @@ var guessCounter = 0;
 document.addEventListener("keydown",keyControls => {
   if(keyControls.key === "q"){
     startTone(1);
+    guess(1);
   }
   if(keyControls.key === "w"){
     startTone(2);
+    guess(2);
   }
   if(keyControls.key === "e"){
     startTone(3);
+    guess(3);
   }
   if(keyControls.key === "a"){
     startTone(4);
+    guess(4);
   }
   if(keyControls.key === "s"){
     startTone(5);
+    guess(5);
   }
   if(keyControls.key === "d"){
     startTone(6);
+    guess(6);
   }
 });
 document.addEventListener("keyup", keys =>{
   stopTone();
 });
 
+//creates new patterns
 function randomPattern(){
   for(let i = 0; i <8; i++){
   var random = Math.floor(Math.random() * 6) + 1;//returns random number from 1-6
