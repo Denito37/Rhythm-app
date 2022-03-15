@@ -83,7 +83,9 @@ place-self:, after playing around with this function I was able to set the butto
  to be smaller to fit all six buttons in 3 rows and 2 columns. With an optimized mobile phone
  app of this website and pre-set songs it could be a fun time-burner app for people
  to play while waiting for anything. Since I also enjoy a good challenge in games
- for the desk]
+ for the desktop version I would make challenging remixes that play faster and have
+ a time limit to press each button(~ 3 seconds), the addition of key bindings would 
+ allow faster inputs from the user making these challenges to be doable after a few tries.]
 
 
 
