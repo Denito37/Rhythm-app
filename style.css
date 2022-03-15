@@ -29,7 +29,7 @@ button{
   background: lightgreen;
   place-self:center right;
 }
-#button1:active, #button1.lit{
+#button1:active, #button1.lit {
   background: green;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/05406805-3AA3-4DA0-995B-A075E8932D71_4_5005_c.jpeg?v=1647308666532);
 }
