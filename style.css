@@ -12,7 +12,6 @@ h1{
 button{
   padding: 15px;
   border-radius: 20px;
-  
 }
 #gameButtonArea > button{
   width: 200px;
@@ -74,7 +73,7 @@ button{
   background:darkorange;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/39B92E21-4A95-40D0-B550-FEC134023C1C_4_5005_c.jpeg?v=1647128399604);
 }
-/*hides start */
+/*hides start button on press, vice versa on stop btn*/
 .hidden{
   display: none;
 }
