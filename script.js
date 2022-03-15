@@ -19,7 +19,6 @@ function randomPattern(){
 function startGame(){
   randomPattern();
   progress = 0;
-  guessCounter = 0;
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -76,8 +75,7 @@ function playSingleClue(btn){
   }
 }
 function playClueSequence(){
-  context.resume()
-  var guessCounter = 0;
+  guessCounter = 0;
   let delay = nextClueWaitTime;
   for(let i=0; i<=progress;i++){
     console.log("play single clue: "+pattern[i]+" in "+ delay + "ms")
@@ -105,13 +103,26 @@ function guess(btn){
   }
   
   if(pattern[guessCounter] == btn){
+    //Guess was correct!
     if(guessCounter == progress){
+      if(progress == pattern.length - 1){
+        //GAME OVER: WIN!
+        winGame();
+      }else{
+        //Pattern correct. Add next segment
         progress++;
         playClueSequence();
-      if(progress == pattern.length - 1){winGame();return;}
-    }else{guessCounter++;}//problem only last two button counts as right guess
-  }else{loseGame();return;}
-}  
+      }
+    }else{
+      //so far so good... check the next guess
+      guessCounter++;
+    }
+  }else{
+    //Guess was incorrect
+    //GAME OVER: LOSE!
+    loseGame();
+  }
+}    
 // Page Initialization
 // Init Sound Synthesizer
 var AudioContext = window.AudioContext || window.webkitAudioContext 
