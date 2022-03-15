@@ -1,6 +1,6 @@
 const clueHoldTime = 1000;
 const cluePauseTime = 333;
-const nextClueWaitTime = 1000;
+const nextClueWaitTime = 750;
 
 
 var pattern = [];
