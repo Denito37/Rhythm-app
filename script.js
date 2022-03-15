@@ -12,6 +12,7 @@ var guessCounter = 0;
 
 //key controls
 document.addEventListener("keydown",keyControls => {
+//document.getElementById("button").classList.add("keyd");
   if(keyControls.key === "q"){
     startTone(1);
     guess(1);
@@ -38,6 +39,7 @@ document.addEventListener("keydown",keyControls => {
   }
 });
 document.addEventListener("keyup", keys =>{
+  //document.getElementById("button"+btn).classList.remove("keyd");
   stopTone();
 });
 
