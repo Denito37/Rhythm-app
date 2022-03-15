@@ -10,13 +10,12 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 
-document.addEventListener('keydown',startTone );
-document.addEventListener('keyup',stopTone );
+function Controls(keys){
 
-switch (startTone.key) {
+switch (keys.key) {
   case "q":
-    "startTone(1)"
-    "guess(1)"
+    startTone(1)
+    guess(1)
   break
   case "w":
     startTone(2)
@@ -34,8 +33,12 @@ switch (startTone.key) {
     startTone(6)
   break
   default: 
+    return
+}
 }
 
+document.addEventListener('keydown',startTone());
+document.addEventListener('keyup',stopTone());
 
 function randomPattern(){
   for(let i = 0; i <8; i++){
