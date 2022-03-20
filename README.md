@@ -41,8 +41,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
+![win](https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/win.gif?v=1647802405097)
+![lost](https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/lost.gif?v=1647802414695)
 ![](gif3-link-here)
 ![](gif4-link-here)
 
