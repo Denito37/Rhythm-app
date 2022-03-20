@@ -48,8 +48,9 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[I used https://freshman.tech/css-grid-calculator/ , W3Schools and my notes 
-in my notion account which I made based on information on W3Schools.]
+[I used https://freshman.tech/css-grid-calculator/ , 
+ https://www.youtube.com/watch?v=lNJMDTSkNXo - for keyboard controls,
+ W3Schools and my notes in my notion account which I made based on information on W3Schools.]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [A Challenge I encountered was making css grid do what i wanted without drawbacks.
