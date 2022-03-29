@@ -69,24 +69,26 @@ place-self:, after playing around with this function I was able to set the butto
  tablets in landscaped mode with the @media container.]
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[What is the usual process of bringing up a new feature you want to an app to the team
- and if the feature is complex and needs multiple people to develop in a reasonable time
- how would the proposal of the feature be handled as opposed to a proposal for a simple
- feature you can complete yourself?
-  How often are completely new projects developed as opposed to managing an existing project?]
+[
+ -  What is the usual process of bringing up a new feature you want to an app to the team
+    and if the feature is complex and needs multiple people to develop in a reasonable time
+    how would the proposal of the feature be handled as opposed to a proposal for a simple
+    feature you can complete yourself?
+  - How often are completely new projects developed as opposed to managing an existing project?]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[I would add pre-set  remixed melodies based on know music used in piano apps with the user
- being able to select it with a button that changes the pattern and frequency map values to match the piano keys needed.
- I would also like to make another version of this website with the set of buttons mimicing
-the Ocarina from the legend of Zelda. Hitting the start button would randomly give you an Ocarina song from the game to repeat as done in the game. 
- I would also like to make a version of this website to work with mobile phones by using  @media to set the buttons 
- to be smaller to fit all six buttons in 3 rows and 2 columns. With an optimized mobile phone
- app of this website and pre-set songs it could be a fun time-burner app for people
- to play while waiting for anything. Since I also enjoy a good challenge in games
- for the desktop version I would make challenging remixes that play faster and have
- a time limit to press each button(~ 3 seconds), the addition of key bindings would 
- allow faster inputs from the user making these challenges to be doable after a few tries.]
+[ 
+  - I would add pre-set  remixed melodies based on know music used in piano apps with the user
+    being able to select it with a button that changes the pattern and frequency map values to match the piano keys needed.
+  - I would also like to make another version of this website with the set of buttons mimicing
+    the Ocarina from the legend of Zelda. Hitting the start button would randomly give you an Ocarina song from the game to repeat as done in the game. 
+ - I would then make this website work with mobile phones by using  @media to set the buttons 
+   to be smaller to fit all six buttons in 3 rows and 2 columns. 
+ - With an optimized mobile phone app of this website and pre-set songs it could be a fun time-burner app
+   to play while waiting for anything. Since I also enjoy a good challenge in games
+   for the desktop version I would make challenging remixes that play faster and have
+   a time limit to press each button(~ 3 seconds), the addition of key bindings would 
+   allow faster inputs from the user making these challenges to be doable after a few tries.]
 
 
 
