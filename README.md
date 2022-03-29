@@ -76,8 +76,10 @@ place-self:, after playing around with this function I was able to set the butto
   How often are completely new projects developed as opposed to managing an existing project?]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[I would add pre-set  remixed melodies based on know music such as Super Mario Bros 
- with the user being able to select it with a button that changes the pattern and frequency map values to make that melody.
+[I would add pre-set  remixed melodies based on know music used in piano apps with the user
+ being able to select it with a button that changes the pattern and frequency map values to match the piano keys needed.
+ I would also like to make another version of this website with the set of buttons mimicing
+the Ocarina from the legend of Zelda. Hitting the start button would randomly give you an Ocarina song from the game to repeat as done in the game. 
  I would also like to make a version of this website to work with mobile phones by using  @media to set the buttons 
  to be smaller to fit all six buttons in 3 rows and 2 columns. With an optimized mobile phone
  app of this website and pre-set songs it could be a fun time-burner app for people
