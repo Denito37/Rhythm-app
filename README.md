@@ -94,7 +94,7 @@ place-self:, after playing around with this function I was able to set the butto
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/dd01609f594f4526b09a8bf27b398e43)
 
 
 ## License
