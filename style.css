@@ -1,7 +1,7 @@
 body {
   font-family : verdana, arial, sans-serif;
   text-align: center;
-  margin: 2em;
+  margin: 0em;
   background-color: #7080AC;
   color:white;
 }
@@ -16,61 +16,61 @@ button{
 #gameButtonArea > button{
   width: 200px;
   height: 200px;
-  margin: 1em;
+  margin: 0.3em;
+  margin-left: 1.3em;
+  margin-right:1.3em;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, arial, sans-serif;
 }
 /* grid container */
-@media (min-width:1025px){
+@media (min-width:769px){
 .rhythm{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(5,1fr);
+  grid-template-rows: repeat(3,1fr,1fr);
 }
 }
 #button1{
   background: lightgreen;
-  place-self:center right;
+  grid-area:1/2/1/2 ;
 }
 #button1:active, #button1.lit {
-  background: green;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/F20B1A05-CA0F-43FF-8906-3A04738748EA_4_5005_c.jpeg?v=1647393000368);
 }
 #button2{
   background: lightblue;
-    place-self:center center;
+  grid-area: 1/3/1/3;
 }
 #button2:active, #button2.lit{
-  background:blue;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/A9C5522A-68F6-4516-B7F4-6CD931A59858_4_5005_c.jpeg?v=1647392967196);
 }
 #button3{
   background: pink;
-  place-self:center left;
+  grid-area:1/4/1/4 ;
 }
 #button3:active, #button3.lit{
-  background:red;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/05734B25-17AF-4BFA-9E4B-B17CF0F982EB_4_5005_c.jpeg?v=1647392993731);
 }
 #button4{
-  background: lightyellow;
-  place-self:center right;
+  background: rgb(213, 213, 129);
+  grid-area:2/2/2/2 ;
 }
 #button4:active, #button4.lit{
-  background:yellow;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/9D6ABD11-B85C-4A0D-ACE6-91E3AD5A2AFC_4_5005_c.jpeg?v=1647392960035);
 }
 #button5{
   background:violet;
-  place-self:center center;
+  grid-area:2/3/2/3 ;
 }
 #button5:active, #button5.lit{
-  background:purple;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/1A87E589-4197-47D7-B5F4-81E0D882EA83_4_5005_c.jpeg?v=1647465588869);
 }
 #button6{
-  background:orange;
-  place-self:center left;
+  background:rgb(242, 171, 41);
+  grid-area:2/4/2/4 ;
 }
 #button6:active, #button6.lit{
-  background:darkorange;
   background-image: url(https://cdn.glitch.global/497827cb-a3b3-46f1-bd3f-3862b3fa073e/8511279A-5F69-4C1A-84D2-BE38302F13BB_4_5005_c.jpeg?v=1647392986934);
 }
 /*hides start button on press, vice versa on stop btn*/

@@ -2,7 +2,6 @@ const clueHoldTime = 1000;
 const cluePauseTime = 333;
 const nextClueWaitTime = 750;
 
-
 var pattern = [];
 var progress = 0;
 var gamePlaying = false;
@@ -45,12 +44,9 @@ document.addEventListener("keydown",keyControls => {
 });
 document.addEventListener("keyup", keys =>{
   stopTone();
-  clearButton(1);
-  clearButton(2);
-  clearButton(3);
-  clearButton(4);
-  clearButton(5);
-  clearButton(6);
+  for (let i = 1; i < 7; i++) {
+    clearButton(i);
+  }
 });
 
 //creates new patterns
@@ -70,6 +66,7 @@ function startGame(){
 }
 function stopGame(){
   gamePlaying = false;
+  //pattern=[];
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
 }
@@ -106,9 +103,21 @@ function stopTone(){
 }
 function lightButton(btn){
   document.getElementById("button"+btn).classList.add("lit");
+  document.getElementById("Q").classList.add("hidden");
+  document.getElementById("W").classList.add("hidden");
+  document.getElementById("E").classList.add("hidden");
+  document.getElementById("A").classList.add("hidden");
+  document.getElementById("S").classList.add("hidden");
+  document.getElementById("D").classList.add("hidden");
 }
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit");
+  document.getElementById("Q").classList.remove("hidden");
+  document.getElementById("W").classList.remove("hidden");
+  document.getElementById("E").classList.remove("hidden");
+  document.getElementById("A").classList.remove("hidden");
+  document.getElementById("S").classList.remove("hidden");
+  document.getElementById("D").classList.remove("hidden");
 }
                           
 function playSingleClue(btn){
@@ -135,6 +144,7 @@ function loseGame(){
 function winGame(){
   stopGame();
   alert("Game Over. You Won!")
+  pattern=[];
 }
 
 function guess(btn){
@@ -148,7 +158,10 @@ function guess(btn){
   
   if(pattern[guessCounter] == btn){
     if(guessCounter == progress){
-      if(progress == pattern.length - 1){winGame();}
+      if(progress == pattern.length - 1){
+        winGame();
+        clearButton();
+      }
       else{
         progress++;
         playClueSequence();
